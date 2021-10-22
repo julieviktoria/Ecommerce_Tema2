@@ -1,114 +1,138 @@
 body {
-    background: #ffffff;
+	background: #ffffff;
 }
 
 span {
-    font-style: italic;
-    letter-spacing: 1px;
+	font-style: italic;
+	letter-spacing: 1px;
 }
 
 .header {
-    display: inline-flex;
-    justify-content: center;
-    align-items: flex-start;
-    position: relative;
-    font-size: 50px;
-    color: #c4c4c4;
-    margin: 1px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	display: inline-flex;
+	justify-content: center;
+	align-items: flex-start;
+	position: relative;
+	font-size: 60px;
+	color: #c4c4c4;
+	margin: 1px;
+	margin-left: 25px;
+	font-family: Poppins, sans-serif;
+	letter-spacing: 8px;
+	font-weight: 300;
+}
+
+@media screen and (max-width: 600px) {
+	.header {
+		font-size: 30px;
+		margin-left: 10px;
+	}
 }
 
 .navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	width: 100%;
 }
 
 .navbar ul {
-    display: flex;
-    flex-direction: row;
+	display: flex;
+	flex-direction: row;
 }
 
 .navbar ul li {
-    margin: 8px;
-    padding: 15px;
-    font-size: 15px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background: rgb(0, 0, 0);
-    color: #c4c4c4;
-    list-style-type: none;   
+	margin: 16px;
+	padding: 15px;
+	border: rgb(0, 0, 0) 1px solid;
+	border-radius: 30px;
+	font-size: 18px;
+	font-family: Poppins, sans-serif;
+	color: #c4c4c4;
+	list-style-type: none;
 }
 
 .navbar ul li:hover {
-    background: #ffffff;
-    color: #000000;
+	background: #000000;
+	color: #ffffff;
+	border: #fff 1px solid;
+	border-radius: 30px;
+	transition: all 0.5s;
+	transform: scale(1.1, 1.1);
 }
 
+@media screen and (max-width: 600px) {
+	.navbar ul li {
+		margin: 16px;
+		padding: 15px;
+		font-size: 8px;
+	}
+}
 .img-head {
-    border-bottom: rgb(255, 255, 255) 1px solid;
+	border-bottom: rgb(255, 255, 255) 1px solid;
+	margin-bottom: -4px;
 }
 
 .offer {
-    display: flex;
-    justify-content: center;
-    border-bottom: rgb(255, 255, 255) 1px solid;
-    width: 100%;
-    padding: 8px;
-    color: #ffffff;
-    background: #0c0c0c;
-    position: relative;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	display: flex;
+	justify-content: center;
+	border-bottom: rgb(255, 255, 255) 1px solid;
+	width: 100%;
+	padding: 8px;
+	color: #ffffff;
+	background: #0c0c0c;
+	position: relative;
+	font-family: Poppins, sans-serif;
 }
 
 .sale {
-    background: rgb(51, 105, 105);
-    color: #ffffff;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    border-bottom: rgb(255, 255, 255) 1px solid;
-    width: 100%;
-    position: relative;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 22px;
-    font-weight: bold;
-    padding: 25px;
-    letter-spacing: 3px;
-    margin-bottom: 3%;
+	background: rgb(51, 105, 105);
+	color: #ffffff;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	border-bottom: rgb(255, 255, 255) 1px solid;
+	width: 100%;
+	position: relative;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+	font-size: 22px;
+	font-weight: bold;
+	padding: 25px;
+	letter-spacing: 3px;
+	margin-bottom: 3%;
 }
 
 .sale a {
-    font-size: 12px;
-    font-weight: 100;
-    letter-spacing: 0;
+	font-size: 12px;
+	font-weight: 100;
+	letter-spacing: 0;
 }
 
 .product div {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12x;
-    padding: 15px;
-} 
-
-#container {
-    display: grid;
-    grid-template: 1fr / 1fr 1fr 1fr;
-    width: 100%;
-    height: 350px;
-    gap: 5%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12x;
+	padding: 15px;
 }
 
-#container .product{
-    width: 100%;
-    height: 100%;
-    background: rgb(121, 167, 167);
-  }
+#container {
+	display: grid;
+	grid-template: 1fr / 1fr 1fr 1fr;
+	width: 100%;
+	height: 350px;
+	gap: 5%;
+}
+
+#container .product {
+	width: 100%;
+	height: 100%;
+	background: rgb(121, 167, 167);
+}
 
 #head {
-    display: flex;
-    flex-direction: row;
-    border-bottom: rgb(255, 255, 255) 1px solid;
-    width: 100%;
-    background: #0c0c0c;
+	display: flex;
+	flex-direction: row;
+	border-bottom: rgb(255, 255, 255) 1px solid;
+	width: 100%;
+	background: #0c0c0c;
 }
