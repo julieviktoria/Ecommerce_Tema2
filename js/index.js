@@ -1,3 +1,9 @@
+/*
+    
+    MVC
+    Model View Controller
+
+*/
 
 const products = [
     {
@@ -63,16 +69,6 @@ const viewItems = function (itemsArray) {
         productCard.appendChild(productImg)
     })
 }
-
-/* const productDIV = 
-
-
-function clearCart() {
-    const cart = document.querySelector('.cart')
-    cart.innerText = ' '
-}
-
-GamepadButton.addEventListener('click', clearCart) */
 
 viewItems(products)
 
