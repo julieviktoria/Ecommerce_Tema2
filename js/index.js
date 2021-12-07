@@ -5,6 +5,7 @@
 
 */
 
+// product array
 const products = [
     {
         name: "Satin Wrap Blouse",
@@ -44,6 +45,16 @@ const products = [
     },
 ]
 
+const cart = [
+    {
+        name: "cart",
+        id: "1",
+        preview: "./assets/shopping-cart.png"
+    },
+]
+
+
+// fetching classes & setting up grid
 const viewItems = function (itemsArray) {
     const grid = itemsArray.map((product) => {
         const productContainer = document.querySelector("#container")
@@ -52,11 +63,13 @@ const viewItems = function (itemsArray) {
         const productTitle = document.createElement("div")
         const productPrice = document.createElement("div")
         const productImg = document.createElement("img")
+        const productCart = document.createElement("div")
 
         productCard.className = "product"
         productDescription.className = "description"
         productTitle.className = "product-title"
         productPrice.className = "price"
+        productCart.className = "cart"
 
         productTitle.innerHTML = product.name
         productPrice.innerHTML = `$${product.price}`
